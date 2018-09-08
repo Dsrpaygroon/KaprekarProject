@@ -29,7 +29,11 @@ int isKaprekar(int n) {
 
   int i;
   long square = n * (long) n;
+<<<<<<< HEAD
   int numDigits = (int) log10((double)n) + 1;
+=======
+  int numDigits = (int) log10(n) + 1;
+>>>>>>> fbbfe0f03c5d52d69d5ce0d57ff88ab7564311a0
   long modulus = 1;
   long first, second;
 
@@ -43,7 +47,11 @@ int isKaprekar(int n) {
     second = square % modulus;
 
     //test if the split makes a Kaprekar number
+<<<<<<< HEAD
     if(first > 0 && first + second == n) {
+=======
+    if(second > 0 && first + second == n) {
+>>>>>>> fbbfe0f03c5d52d69d5ce0d57ff88ab7564311a0
       return 1;
     }
   }
